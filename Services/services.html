@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav">
+      <div id="nav-l">
+        <h1>Chemionyx</h1>
+      </div>
+      <div id="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div id="nav-r">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/About/about.html">About</a></li>
+          <li><a href="/Services/services.html" id="active">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mobile-nav">
+      <div id="close-nav" onclick="toggleMenu()">✖</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/About/about.html">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+
+  <main id="main">
+    <div class="m-left">
+      <div class="ser-img1"></div>
+    </div>
+    <div class="m-right">
+      <div class="main-text">
+        <h1 id="heading">Our Services</h1>
+        <h1>Process Design & Front-End Engineering Packages (FEED)</h1>
+        <p>We provide tailored process design and FEED solutions for next-generation energy and chemical systems. From
+          conceptual studies to full FEED packages, Chemionyx helps clients scale technologies with confidence and
+          efficiency.
+        </p>
+        <h3>Our capabilities include:</h3>
+        <ul>
+          <li>Process Flow Diagrams (PFDs)</li>
+          <li>Piping & Instrumentation Diagrams (P&IDs)</li>
+          <li>Mass and Energy Balances</li>
+          <li>Equipment Sizing & Specification</li>
+          <li>Capital Cost Estimation & Techno-Economic Analysis</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+
+
+  <section class="ser2">
+    <div class="ser-two-left">
+     <div class="ser-two-text">
+        <h1>Research & Development (R&D)</h1>
+        <p>Our R&D team bridges the gap between concept and commercialization. Whether validating a lab-scale idea or
+          designing a pilot plant, Chemionyx supports innovation through all stages of development.
+        </p>
+          <h3>Key focus areas:</h3>
+          <ul>
+            <li>Thermochemical Conversion (such as pyrolysis and gasification)</li>
+            <li>Carbon Capture & Utilization (CCU)</li>
+            <li>Renewable Fuel Synthesis</li>
+            <li>Process Intensification & Optimization</li>
+          </ul>
+      </div>
+    </div>
+    <div class="ser-two-right">
+      <div class="ser-img2"></div>
+    </div>
+  </section>
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobile-nav").classList.toggle("active");
+    }
+  </script>
+
+
+</body>
+
+</html>

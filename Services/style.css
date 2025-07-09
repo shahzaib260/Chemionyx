@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+/* Header Navigation */
+#header {
+  height: 10svh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+#nav {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  animation: navSlideDown 0.7s ease-out;
+  will-change: transform, opacity;
+}
+@keyframes navSlideDown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+    #nav-l h1 {
+      font-size: 35px;
+      color: #004A98;
+      text-transform: uppercase;
+    }
+
+    #nav-r {
+      display: flex;
+      gap: 30px;
+    }
+
+    #nav-r ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    #nav-r li {
+      font-size: 25px;
+    }
+
+    #nav-r li a {
+      text-decoration: none;
+      color: #004A98;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    #nav-r li #active {
+      color: #082e58;
+    }
+
+    #nav-r li a:hover {
+      color: #082e58;
+    }
+
+    #nav-r li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background-color: #082e58;
+      transition: width 0.5s ease-in-out;
+    }
+
+    #nav-r li a:hover::after {
+      width: 100%;
+    }
+
+    #menu-toggle {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    #close-nav {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+    #mobile-nav {
+   position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: #0049989c;
+  backdrop-filter: blur(40px);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+  z-index: 999;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#mobile-nav.active {
+   transform: translateX(0%);
+  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.486);
+
+}
+
+    #mobile-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #mobile-nav ul li a {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+/*  Mobile Nav* */
+
+
+@media (max-width: 768px) {
+  #nav-r {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+#main{
+  min-height: 90svh;
+  width: 100%;
+  background: #004A98;
+  display: flex;
+}
+
+#heading{
+  font-size: 90px;
+  color: #7eafe8;
+}
+
+
+.m-left{
+  width: 40%;
+  min-height: 90svh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ser-img1{
+  height: 55vh;
+  width: 90%;
+  /* background-color: blue; */
+  background-image: url(/images/ser-img1.png);
+  background-size: cover;
+  background-position: center;
+}
+.m-right{
+  min-height: 90svh;
+  width: 60%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main-text{
+  /* background-color: rgb(41, 28, 12); */
+  min-height: 55vh;
+}
+.main-text h1{
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.main-text p{
+  font-size: 25px;
+  margin-bottom: 25px;
+   color: rgb(225, 225, 225);
+}
+
+.main-text h3{
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: white;
+}
+.main-text ul{
+  list-style-position: outside; /* or keep default */
+  padding-left: 1.5em;
+}
+
+.main-text li{
+  font-size: 25px;
+  margin-bottom: 10px;
+   color: rgb(225, 225, 225);
+   text-indent: -1em;
+  padding-left: 1em;
+  line-height: 30px;
+}
+
+
+@media (max-width: 480px){
+  #main{
+    flex-direction: column-reverse;
+    padding: 40px 10px;
+  }
+  #heading{
+    font-size: 50px;
+  }
+  .m-left{
+    width: 100%;
+    background-color: #004A98;
+    min-height: 10svh;
+  }
+  .m-right{
+    width: 100%;
+    min-height: 50svh;
+  }
+  .main-text h1{
+    font-size: 35px;
+  }
+  .main-text p{
+    font-size: 20px;
+  }
+
+  .main-text h3{
+    font-size: 25px;
+  }
+  .main-text li{
+    font-size: 20px;
+  }
+  .ser-img1{
+    height: 250px;
+  }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px){
+    #main{
+    flex-direction: column-reverse;
+    padding: 40px 10px;
+  }
+  #heading{
+    font-size: 50px;
+  }
+  .m-left{
+    width: 100%;
+    background-color: #004A98;
+    min-height: 10svh;
+  }
+  .m-right{
+    width: 100%;
+    min-height: 50svh;
+  }
+  .main-text h1{
+    font-size: 35px;
+  }
+  .main-text p{
+    font-size: 22px;
+  }
+
+  .main-text h3{
+    font-size: 25px;
+  }
+  .main-text li{
+    font-size: 22px;
+    
+  }
+  .ser-img1{
+    height: 350px;
+    /* background-color: red; */
+  }
+}
+
+
+
+.ser2{
+  background-color: white;
+  padding: 50px 15px;
+  display: flex;
+}
+
+.ser-two-left{
+  width: 50%;
+  /* height: 50vh; */
+}
+
+.ser-two-right{
+  width: 50%;
+  /* height: 50vh; */
+}
+
+.ser-two-text h1{
+font-size: 50px;
+margin-bottom: 30px;
+color: #004A98;
+}
+.ser-two-text p{
+font-size: 25px;
+margin-bottom: 25px;
+}
+
+.ser-two-text h3{
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: black;
+  color: #004A98;
+}
+
+.ser-two-text ul{
+  list-style-position: outside; /* or keep default */
+  padding-left: 1.5em;
+}
+
+.ser-two-text li{
+  font-size: 25px;
+  margin-bottom: 10px;
+   color: black;
+   text-indent: -1em;
+  padding-left: 1em;
+  line-height: 30px;
+}
+
+
+
+
+@media (max-width: 480px){
+  .ser2{
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+
+  .ser-two-left{
+    width: 100%;
+    /* background-color: #004A98; */
+    
+  }
+  .ser-two-right{
+    width: 100%;
+   
+  }
+  .ser-two-text h1{
+    font-size: 35px;
+  }
+  .ser-two-text p{
+    font-size: 20px;
+  }
+
+  .ser-two-text h3{
+    font-size: 25px;
+  }
+  .ser-two-text li{
+    font-size: 20px;
+  }
+  .ser-img1{
+    height: 250px;
+  }
+
+}

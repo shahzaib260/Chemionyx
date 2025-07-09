@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemionyx</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav">
+      <div id="nav-l">
+        <h1>Chemionyx</h1>
+      </div>
+      <div id="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div id="nav-r">
+        <ul>
+          <li><a href="/" id="active">Home</a></li>
+          <li><a href="About/about.html">About</a></li>
+          <li><a href="Services/services.html">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mobile-nav">
+      <div id="close-nav" onclick="toggleMenu()">✖</div>
+      <ul>
+        <li><a href="#" id="active">Home</a></li>
+        <li><a href="About/about.html">About Us</a></li>
+        <li><a href="Services/services.html">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero">
+      <div id="hero-text">
+        <h1>Chemionyx</h1>
+        <h6>Engineering <span>Sustainable</span> Futures </h6>
+        <div class="hero-buttons">
+          <button class="button"><a href="#">Services</a></button>
+          <button class="button"><a href="#">Contact</a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <section id="intro">
+    <div class="intro-left">
+      <div class="intro-img"></div>
+    </div>
+    <div class="intro-right">
+      <div class="intro-text">
+        <p><span>Welcome to Chemionyx,</span> we bring advanced chemical engineering expertise to the forefront of
+          sustainable
+          innovation.At Chemionyx, we bring advanced chemical engineering expertise to the forefront of sustainable
+          innovation. Specializing in process design, front-end engineering packages (FEED), and research & development,
+          we empower our clients to lead in waste-to-energy and low-carbon fuel technologies. Our commitment to
+          precision, innovation, and environmental responsibility positions us as your trusted partner in building a
+          cleaner, smarter energy future.</p>
+        <button class="button" id="intro-btn"><a href="About/about.html#heading">More</a></button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="services">
+    <div class="s-left">
+      <div class="s-text">
+        <h1>Our Services</h1>
+      <h6>Process Design & FEED</h6>
+      <p>We deliver tailored process design and front-end engineering (FEED) solutions to help scale sustainable energy
+        and chemical systems with confidence.</p>
+      <h6>Research & Development (R&D)</h6>
+      <p>Our R&D team supports every stage of innovation — from lab-scale validation to pilot plant design — focused on
+        waste-to-energy and low-carbon fuel technologies.</p>
+        <button class="button" id="s-btn"> <a href="Services/services.html#heading">View More</a> </button>
+      </div>
+    </div>
+    <div class="s-right">
+      <div class="h-services-img"></div>
+    </div>
+  </section>
+
+
+  <section id="footer">
+<div class="f-top">
+  <div class="f-t-left">
+    
+  </div>
+</div>
+<div class="f-bottom"></div>
+  </section>
+
+
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobile-nav").classList.toggle("active");
+    }
+
+
+
+  </script>
+ 
+</body>
+
+</html>

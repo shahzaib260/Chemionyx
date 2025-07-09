@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav">
+      <div id="nav-l">
+        <h1>Chemionyx</h1>
+      </div>
+      <div id="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div id="nav-r">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/About/about.html" id="active">About</a></li>
+          <li><a href="/Services/services.html">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mobile-nav">
+      <div id="close-nav" onclick="toggleMenu()">✖</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/About/about.html">About</a></li>
+        <li><a href="/Services/services.html">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <div class="main-text">
+       <h1 id="heading">About Us</h1>
+      <h1>Who We Are</h1>
+      <p><span>Chemionyx</span> is a forward-thinking chemical engineering company committed to accelerating the
+        transition to a
+        low-carbon future. We specialize in R&D and engineering solutions for waste-to-energy systems and low-carbon
+        fuel
+        technologies, integrating scientific rigor with engineering innovation.
+        Guided by the principles of process excellence, sustainability, and impact-driven design, we operate at the
+        intersection of technology development, process intensification, and the energy transition. From concept to
+        commissioning, Chemionyx helps clients design and optimize cleaner, smarter, and more efficient energy
+        solutions.
+      </p>
+    </div>
+
+    <div class="main-img">
+
+    </div>
+  </main>
+
+
+  <section id="about-sec">
+    <div class="sec-text">
+      <h1 >Our Mission</h1>
+      <p>To accelerate the transition to cleaner energy systems through intelligent process design and impactful
+        scientific research.</p>
+      <h1>Our Vision</h1>
+      <p>A world where waste is transformed into resource, and carbon is no longer a constraint to innovation or
+        progress.
+      </p>
+      <h1> Why Chemionyx? </h1>
+      
+        <li>Deep Technical Expertise in chemical process engineering</li>
+        <li>Innovation-First Mindset for tackling low-carbon and circular economy challenges</li>
+        <li>Flexible Collaboration Models for startups, scale-ups, and established firms</li>
+        <li id="l-p">Sustainability-Driven Values — we engineer with the future in mind</li>
+      
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobile-nav").classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>
